@@ -67,3 +67,54 @@ section {
 .header nav ul li {
   margin-right: 50px;
 }
+
+.mainvisual {
+  position: relative;
+  height: 600px;
+}
+
+.mainvisual img {
+  width: 70%;
+  height: 500px;
+  object-fit: cover;
+  margin-left: 30%;
+  padding-top: 50px;
+}
+
+.mainvisual h2 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.bg1 {
+  background: #e8e7e7;
+  height: 700px;
+  width: 45%;
+  position: absolute;
+  top: -18%;
+  left: 0;
+  z-index: -1;
+}
+.greeting h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.greeting .contents {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.greeting .contents figure {
+  width: 50%;
+}
+
+.greeting .content {
+  width: 48%;
+}
