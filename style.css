@@ -135,6 +135,7 @@ header nav {
 }
 #key_visual img {
   width: 100%;
+  vertical-align: bottom;
 }
 main {
   width: 100%;
@@ -149,6 +150,24 @@ main h2 {
 }
 main .container {
   padding: 10px;
+}
+#information ul li {
+  padding: 10px;
+}
+#information ul li:nth-child(even) {
+  background-color: #F5F3EF;
+}
+#information ul li p {
+  font-size: 14px;
+}
+#information ul li time {
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+#information ul li p::before {
+  content: "▶︎";
+  padding-right: 5px;
 }
 #gourmet article {
   margin-bottom: 25px;
@@ -187,6 +206,7 @@ main .container {
 }
 #gourmet article figure img {
   width: 100%;
+  vertical-align: bottom;
 }
 
 footer {
@@ -222,4 +242,95 @@ footer p small {
   height: 30px;
   font-size: 10px;
   line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 80px;
+  }
+  header .logo {
+  top: 24px;
+  left: 25px;
+  width: 250px;
+  }
+  header nav {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 21px;
+  }
+  header nav ul {
+    padding-right: 20px;
+  }
+  header nav ul li {
+    display: inline-block;
+    height: 35px;
+    font-size: 17px;
+    line-height: 35px;
+  }
+   header nav ul li:hover {
+     background: #B99565;
+   }
+   header nav ul li:hover a {
+     color: #fff;
+   }
+  header nav ul li a {
+    display: block;
+    color: #9c9b98;
+    text-decoration: none;
+    padding: 0 20px;
+  }
+  #key_visual {
+    margin-bottom: 30px;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #gourmet article {
+    width: calc(50% - 5px);
+  }
+  #information{
+    margin-bottom: 50px;
+  }
+  #information ul {
+    list-style: none;
+  }
+  #information ul li time {
+    font-size: 14px;
+    margin: 0;
+  }
+  #information ul li p {
+    display: inline-block;
+  }
+  #information ul li p::before {
+    padding: 0 10px;
+  }
+  footer ul li {
+    display: inline-block;
+    width: 120px;
+    transition: .3s;
+    font-size: 17px;
+  }
+  footer ul li:hover {
+    background: #fff;
+  }
+  footer ul li:hover a {
+    color: #53514C;
+  }
+  footer ul li + li {
+    margin: 0;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  main .container {
+    padding: 10px 0;
+  }
 }
