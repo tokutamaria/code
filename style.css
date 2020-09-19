@@ -292,8 +292,12 @@ footer p small {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  #gourmet {
+    margin-bottom: 20px;
+  }
   #gourmet article {
     width: calc(50% - 5px);
+    margin-bottom: 20px;
   }
   #information{
     margin-bottom: 50px;
